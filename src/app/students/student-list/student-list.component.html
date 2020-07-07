@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row my-3">
+        <div class="col-3"></div>
+        <div class="col-3">
+            <button class="btn btn-outline-info mr-2" (click)="sortBySurname()">Sort surname</button>
+            <button class="btn btn-outline-info mr-2" (click)="sortByGroup()">Sort group</button>
+            <button class="btn btn-outline-info" (click)="sortByDirection()">Sort direction</button>
+        </div>
+    </div>
+
+    <table class="table table-bordered text-center">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Surname N.M.</th>
+                <th scope="col">Group</th>
+                <th scope="col">Direction</th>
+                <th scope="col">
+                    <button class="btn btn-primary" (click)="onAddProfile()">Add student</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <th scope="row">{{student.id}}</th>
+                <td>{{getInitials(student)}}</td>
+                <td>{{student.group}}</td>
+                <td>{{getDirection(student.direction)}}</td>
+                <td>
+                    <button class="btn btn-outline-primary mr-2" (click)="onEditProfile(student.id)">Edit</button>
+                    <button class="btn btn-outline-danger" (click)="onDeleteProfile(student.id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

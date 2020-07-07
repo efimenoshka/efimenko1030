@@ -1,0 +1,26 @@
+{
+  "mstudents": [
+    {
+      "id": 2,
+      "surname": "Petrov",
+      "name": "Petr",
+      "middlename": "Petrovich",
+      "phone": "+7 (222) 222-22-22",
+      "email": "frfrfr@frfr",
+      "birthday": "2020-07-18",
+      "group": "34",
+      "direction": 1
+    },
+    {
+      "id": 4,
+      "surname": "Sidorov",
+      "name": "Sidr",
+      "middlename": "Sidrovich",
+      "phone": "+7 (444) 444-44-44",
+      "email": "rrrrrr@f.ff",
+      "birthday": "2020-03-13",
+      "group": "3232323",
+      "direction": 2
+    }
+  ]
+}
